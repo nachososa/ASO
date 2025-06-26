@@ -1,0 +1,21 @@
+# Ignorar la carpeta Assets
+/assets
+
+# Archivos generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de editor/IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~
