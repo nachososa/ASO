@@ -101,6 +101,22 @@ A continuación se detallan los tiempos promedio obtenidos al aplicar cada polí
 
 ---
 
+### Observación paso a paso de las políticas
+
+Durante la ejecución paso a paso de cada política, se analizaron las decisiones del planificador con una unidad de tiempo de anticipación. Se identificó lo siguiente:
+
+- **FIFO (No expropiable):** el planificador siempre selecciona el proceso que llegó primero. Es fácil anticipar la próxima tarea: es el siguiente en la cola de llegada.
+
+- **Menos tiempo restante primero (SJF no expropiable):** selecciona el proceso con menor tiempo estimado de CPU. Aunque no interrumpe procesos en ejecución, la elección del próximo proceso se puede prever al conocer la duración de todos los procesos listos.
+
+- **Round Robin (expropiable):** asigna un quantum fijo a cada proceso. Los procesos se alternan en orden. Se puede predecir la próxima tarea observando la posición en la cola y el orden rotativo.
+
+- **PSJF (expropiable):** en cada instante compara el tiempo restante de los procesos listos. Si aparece uno con menor tiempo, interrumpe el actual. Anticipar la próxima tarea requiere observar dinámicamente todos los tiempos restantes en la cola.
+
+Este análisis evidencia cómo varía la “predictibilidad” del comportamiento del planificador según el algoritmo utilizado.
+
+---
+
 ## Conclusión
 
 El simulador demuestra que **PSJF** es el algoritmo que ofrece el **mejor balance entre tiempos de respuesta y turnaround**, al priorizar constantemente al proceso más corto.  
