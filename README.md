@@ -1,4 +1,6 @@
-# ASO | Arquitectura de Computadoras y Sistemas Operativos
+# ASO
+
+## Arquitectura de Computadoras y Sistemas Operativos
 
 Material de estudio y ejercitación de ASO | UTN 2025
 
