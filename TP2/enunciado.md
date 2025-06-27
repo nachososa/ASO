@@ -58,11 +58,11 @@ Los procesos llegan a la cola y solicitan un intervalo de CPU, si dicho interval
 
 ## Descripción Del Programa
 
-![Imagen](./img/imagen1.png)
+![Imagen](./img/enunciado1.png)
 
 ### Lectura de los Resultados
 
-![Imagen](./img/imagen2.png)
+![Imagen](./img/enunciado2.png)
 
 ***CPU:*** Tiempo "Real" en el reloj del CPU.
 
@@ -72,7 +72,7 @@ Los procesos llegan a la cola y solicitan un intervalo de CPU, si dicho interval
 
 ## Configuración de entrada de los procesos
 
-![Imagen](./img/imagen3.png)
+![Imagen](./img/enunciado3.png)
 
 ***Número de Procesos:*** En este caso se define la cantidad de procesos que se cargaran en la simulación.
 
@@ -92,4 +92,4 @@ Se puede configurar el Tiempo Burst, Tiempo de Bloqueado y Tiempo de llegada ent
 
 ***Distribución exponencial:*** En estadística la distribución exponencial es una distribución de probabilidad continua con un parámetro lambda > 0 cuya función de densidad es:
 
-![Imagen](./img/imagen4.png)
+![Imagen](./img/enunciado4.png)
